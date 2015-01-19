@@ -1,0 +1,149 @@
+@import "variable"
+@import "framwork/header"
+@import "framwork/footer"
+
+*
+  padding: 0px
+  margin: 0px
+
+#bars
+  float: right
+  margin:
+    right: $right
+    top: -20px
+
+#navigation
+  padding: 65px 0px 0px
+
+#slider
+  width: $width
+  height: 130px
+
+#nav
+  width: $width
+  height: 69px
+  background-color: white
+  text-align: center
+  padding: 20px 0px 11px 6px
+  & ul
+    list-style: none
+    clear: both
+    & li
+      display: inline-block
+      line-height: 30px
+      padding: 0px 17px 0px 0px
+      & button
+        border-radius: 100px
+        width: 47px
+        height: 47px
+        font-size: 21px
+        border: none
+        outline: none
+        color: #ffffff
+      & label
+        font-size: 13px
+#chat_button
+  background-color: $chat_color
+#question_button
+  background-color: $queston_color
+#diary_button
+  background-color: $diary_color
+#expert_button
+  background-color: $expert_color
+
+
+
+#section
+  padding-bottom: 495px
+  background-color: rgb(232,232,232)
+
+.mark_good
+  width: 34px
+  height: 15px
+  font-size: 11px
+  color: #ffffff
+  text-align: right
+  padding: 5px
+  position: relative
+  top: -114px
+  float: right
+  border-radius: 500px 30px 30px 500px
+[name="marrow"]
+  background-color: $header-color
+[name="recommendation"]
+  background-color: $chat_color
+[name="none"]
+  opacity: 0
+.portrait
+  position: relative
+  left: 5px
+  top: -37px
+  height: 37px
+  width: 110px
+  & img
+    width: 32px
+    height: 32px
+    border: 2px solid #ffffff
+    border-radius: 100px
+  & span
+    width: 63px
+    font-size: 11px
+    color: rgb(252,150,187)
+    position: relative
+    top: -10px
+#show
+  margin: 0px
+  padding: 12px 10px 0px
+  & div
+    height: 169px
+    width: 300px
+    background-color: #ffffff
+    margin-bottom: 12px
+    border-radius: $div_img_border_radius
+  & p
+    display: inline-block
+    font-size: 14px
+    position: relative
+    top: -30px
+    left: 8px
+
+[name="showImg"]
+  width: 300px
+  height: 123px
+
+
+#discovery_h
+  margin: 12px 17px 0px
+  & h
+    font-size: 14px
+    color: rgb(179,179,179)
+#discovery
+  width: $width
+  height: 200px
+  margin-top: 11px
+  & div
+    width: 300px
+    background-color: #ffffff
+    margin: 0px 10px
+    border-radius: $div_img_border_radius
+    & img
+      width: 290px
+      height: 128px
+      padding: 8px 6px 0px
+      border-radius: $div_img_border_radius
+
+[name="findName"]
+  font-size: 14px
+  margin: 11px 9px 13px
+[ name="find_place_price"]
+  margin: 13px 6px
+[name="location"]
+  font-size: 12px
+  color: rgb(205,205,205)
+[name="price"]
+  font-size: 12px
+  color: rgb(252,150,187)
+[name="pre_price"]
+  color: rgb(205,205,205)
+  font-size: 7px
+  text-decoration: line-through
