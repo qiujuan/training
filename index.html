@@ -1,120 +1,118 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head lang="zh-cms-cn">
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,maximum=1,minimum=1"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
   <title>首页</title>
-  <script type="text/javascript" src="js/jquery/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="js/slider_demo.js"></script>
-  <script type="text/javascript" src="js/jquery/slider.min.js"></script>
-  <link rel="stylesheet" href="css/slider.min.css"/>
+  <link rel="stylesheet" href="js/slider/slider.min.css"/>
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/index.css"  media="screen, projection"/>
 </head>
-<header id="header">
-  <h1>悦美</h1>
-  <button id="bars" class="fa fa-magic"></button>
-</header>
-<nav id="navigation">
-  <div id="imgContainer">
-    <div id="navImg"></div>
-    <div id="slider"></div>
-  </div>
-  <div id="nav">
+<body>
+  <header id="header">
+    <h1>悦美</h1>
+    <button id="bars" class="fa fa-magic"></button>
+  </header>
+  <nav id="navigation">
+    <div id="slider">
+    </div>
+    <div id="nav">
+      <a><button type="button" id="chat_button" name="navButton" class="fa fa-comments"></button><br/><label>讨论组</label></a>
+      <a><button type="button" id="question_button" name="navButton" class="fa fa-lightbulb-o"></button><br/><label>提问题</label></a>
+      <a><button type="button" id="diary_button" name="navButton" class="fa fa-book"></button><br/><label>写日记</label></a>
+      <a><button type="button" id="expert_button" name="navButton" class="fa fa-graduation-cap"></button><br/><label>专家</label></a>
+    </div>
+  </nav>
+  <article id="section">
+    <div id="show">
+      <div>
+        <img src="images/piaoxinhui.jpg" name="showImg" title="pic"/><br/>
+        <label class="mark-good" name="marrow">精华</label>
+        <label class="portrait">
+          <img src="images/portrait1.jpg"/>
+          <span class="nickname">红糖蜜罐妞</span>
+        </label>
+        <p>上个月做了脂肪填充面颊突然变年轻了呢...</p>
+      </div>
+      <div>
+        <img src="images/yangmi.jpg" name="showImg" title="pic"/><br/>
+        <label class="mark-good" name="recommendation" >推荐</label>
+        <label class="portrait">
+          <img src="images/portrait2.jpg"/>
+          <span class="nickname">小猪妹</span>
+        </label>
+        <p>我开眼角了，感觉不错，给大家分享一下心情</p>
+      </div>
+      <div>
+        <img src="images/luhan.jpg" name="showImg" title="pic"/><br/>
+        <label class="mark-good" name="none">精华</label>
+        <label class="portrait">
+          <img src="images/portrait3.jpg"/>
+          <span class="nickname">清浅吟唱</span>
+        </label>
+        <p>旅行之前决定先把自己变美，做了隆鼻手术</p>
+      </div>
+    </div>
+    <div id="discovery-h">
+      <h>
+        <i class="fa fa-heart-o"></i>&nbsp;发现·美食
+      </h>
+    </div>
+    <div id="discovery">
+      <div>
+        <img src="images/cookie.jpg" name="findImg"/>
+        <p name="findName">切开法双眼皮1cm微创不留痕，解决眼泡问题</p>
+        <p name="find-place-price">
+          <label name="location"><i class="fa fa-map-marker"></i>&nbsp;福州医院美容整形（刘红明）</label>
+          <label name="price">￥2200</label>
+          <label name="pre-price">￥3200</label>
+        </p>
+        <p class="hr"></p>
+        <img src="images/kaochi.jpg" name="findImg"/>
+        <p name="findName">切开法双眼皮1cm微创不留痕，解决眼泡问题</p>
+        <p name="find-place-price">
+          <label name="location"><i class="fa fa-map-marker"></i>&nbsp;福州医院美容整形（刘红明）</label>
+          <label name="price">￥2200</label>
+          <label name="pre-price">￥3200</label>
+        </p>
+        <p class="hr"></p>
+        <img src="images/liangcai.jpg" name="findImg"/>
+        <p name="findName">切开法双眼皮1cm微创不留痕，解决眼泡问题</p>
+        <p name="find-place-price">
+          <label name="location"><i class="fa fa-map-marker"></i>&nbsp;福州医院美容整形（刘红明）</label>
+          <label name="price">￥2200</label>
+          <label name="pre-price">￥3200</label>
+        </p>
+        <p class="hr"></p>
+      </div>
+    </div>
+  </article>
+  <footer id="footer">
     <ul>
-      <li><button id="chat_button" name="navButton" class="fa fa-comments"></button><br/><label>讨论组</label></li>
-      <li><button id="question_button" name="navButton" class="fa fa-lightbulb-o"></button><br/><label>提问题</label></li>
-      <li><button id="diary_button" name="navButton" class="fa fa-book"></button><br/><label>写日记</label></li>
-      <li><button id="expert_button" name="navButton" class="fa fa-graduation-cap"></button><br/><label>专家</label></li>
+      <li>
+        <a href="index.html"><button type="button" id="home" class="fa fa-home"></button><br/>
+          <label>首页</label></a>
+      </li>
+      <li>
+        <a href="discussion.html"><button type="button" id="discussIcon" class="fa fa-twitch"></button><br/>
+          <label>讨论组</label></a>
+      </li>
+      <li>
+        <button id="microPlastic" type="button" class="fa fa-tag"></button><br/>
+        <label>淘整形</label>
+      </li>
+      <li>
+        <button id="msg" type="button" class="fa fa-envelope-o"></button><br/>
+        <label>消息</label>
+      </li>
+      <li>
+        <a href="posts.html"><button id="me" type="button" class="fa fa-user"></button><br/>
+          <label>我</label></a>
+      </li>
     </ul>
-  </div>
-</nav>
-<section id="section">
-  <article id="show">
-    <div>
-      <img src="images/piaoxinhui.jpg" name="showImg" title="pic"/><br/>
-      <label class="mark_good" name="marrow">精华</label>
-      <label class="portrait">
-        <img src="images/portrait1.jpg"/>
-        <span class="nickname">红糖蜜罐妞</span>
-      </label>
-      <p>上个月做了脂肪填充面颊突然变年轻了呢...</p>
-    </div>
-    <div>
-      <img src="images/yangmi.jpg" name="showImg" title="pic"/><br/>
-      <label class="mark_good" name="recommendation" >推荐</label>
-      <label class="portrait">
-        <img src="images/portrait2.jpg"/>
-        <span class="nickname">小猪妹</span>
-      </label>
-      <p>我开眼角了，感觉不错，给大家分享一下心情</p>
-    </div>
-    <div>
-      <img src="images/luhan.jpg" name="showImg" title="pic"/><br/>
-      <label class="mark_good" name="none">精华</label>
-      <label class="portrait">
-        <img src="images/portrait3.jpg"/>
-        <span class="nickname">清浅吟唱</span>
-      </label>
-      <p>旅行之前决定先把自己变美，做了隆鼻手术</p>
-    </div>
-  </article>
-  <article id="discovery_h">
-    <h>
-      <i class="fa fa-heart-o"></i>&nbsp;发现·美食
-    </h>
-  </article>
-  <article id="discovery">
-    <div>
-      <img src="images/cookie.jpg" name="findImg"/>
-      <p name="findName">切开法双眼皮1cm微创不留痕，解决眼泡问题</p>
-      <p name="find_place_price">
-        <label name="location"><i class="fa fa-map-marker"></i>&nbsp;福州医院美容整形（刘红明）</label>
-        <label name="price">￥2200</label>
-        <label name="pre_price">￥3200</label>
-      </p>
-      <hr color="#cfcfcf"/>
-      <img src="images/kaochi.jpg" name="findImg"/>
-      <p name="findName">切开法双眼皮1cm微创不留痕，解决眼泡问题</p>
-      <p name="find_place_price">
-        <label name="location"><i class="fa fa-map-marker"></i>&nbsp;福州医院美容整形（刘红明）</label>
-        <label name="price">￥2200</label>
-        <label name="pre_price">￥3200</label>
-      </p>
-      <hr color="#cfcfcf"/>
-      <img src="images/liangcai.jpg" name="findImg"/>
-      <p name="findName">切开法双眼皮1cm微创不留痕，解决眼泡问题</p>
-      <p name="find_place_price">
-        <label name="location"><i class="fa fa-map-marker"></i>&nbsp;福州医院美容整形（刘红明）</label>
-        <label name="price">￥2200</label>
-        <label name="pre_price">￥3200</label>
-      </p>
-      <hr color="#cfcfcf"/>
-    </div>
-  </article>
-</section>
-<footer id="footer">
-  <ul>
-    <li>
-      <a href="index.html"><button id="home" class="fa fa-home"></button><br/>
-        <label>首页</label></a>
-    </li>
-    <li>
-      <a href="discussion.html"><button id="discussIcon" class="fa fa-twitch"></button><br/>
-        <label>讨论组</label></a>
-    </li>
-    <li>
-      <button id="microPlastic" class="fa fa-tag"></button><br/>
-      <label>淘整形</label>
-    </li>
-    <li>
-      <button id="msg" class="fa fa-envelope-o"></button><br/>
-      <label>消息</label>
-    </li>
-    <li>
-      <a href="posts.html"><button id="me" class="fa fa-user"></button><br/>
-        <label>我</label></a>
-    </li>
-  </ul>
-</footer>
+  </footer>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/slider/slider.js"></script>
+  <script src="js/slider/slider_demo.js"></script>
+</body>
 </html>

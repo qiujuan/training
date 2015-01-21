@@ -4,6 +4,10 @@
 $(function(){
   var slider=new Slider("#slider").setDuration(3000);
   slider.setSize(320,123);
+  slider.setPhotos([{"src":"images/kd.jpg"},
+    {"src":"images/gly.jpg"},
+    {"src":"images/malysia.jpg"},
+    {"src":"images/sllk.jpg"}]);
   slider.fetchJson('photos.json');
   var transitions=['squares','circles','circle','diamond','verticalSunblind','verticalOpen','clock','tarnsition-flip','transition-left','transition-zoomout']
   setInterval(function(){

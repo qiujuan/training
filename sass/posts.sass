@@ -1,33 +1,47 @@
 @import "framwork/header"
 @import "variable"
 @import "framwork/footer"
+@import "posts-comment/comment"
+@import "posts-comment/reply"
+@import "posts-comment/delete-floor"
+@import "posts-comment/authority"
 
-*
+body
   padding: 0px
   margin: 0px
 
 #back
   float: left
   padding-left: $left
-#share,#star
+  margin-top: -16px
+#header
+  & button
+    margin-top: -16px
+#share
   float: right
-  padding-right: $right
+  margin-right: 49px
+#star
+  float: right
+  margin-right: 16px
 
 #section
   padding-top: 65px
-  padding-bottom: 1260px
+  padding-bottom: 100px
 h2
   font-size: 17px
   padding: 18px 10px 20px
-.portrait
+.user-info
   width: $width
   height: 35px
-.portraitH
-  width: 32px
-  height: 32px
-  margin: 0px 9px 15px
-  border: 1px solid gray
-  border-radius: 100px
+.portrait
+  text-align: center
+  vertical-align: middle
+  & img
+    width: 32px
+    height: 32px
+    margin: 0px 9px 15px
+    border: 1px solid gray
+    border-radius: 100px
 .level
   width: 27px
   height: 12px
@@ -37,53 +51,64 @@ h2
   color: #ffffff
   background-color: $header-color
   position: relative
-  top: -24px
-  left: 12px
+  top: -10px
+  left: -45px
   border-radius: 5px
-.user_info
+.user-addr
   width: 270px
   height: 32px
+  color: $floor_color
   position: relative
+  top: -36px
   left: 50px
-  top: -60px
 .nickname
   font-size: 14px
+  position: relative
+  top: -33px
+  left: -37px
 .role
   background-color: $expert_color
   padding: 1px 2px
   font-size: 9px
   border-radius: 4px
   color: #ffffff
+  position: relative
+  top: -33px
+  left: -38px
 .date
-  width: 200px
-  height: 25px
+  width: 215px
+  height: 13px
   border-radius: 20px
   background-color: rgb(241,241,241)
   font-size: 11px
   position: relative
   top: -17px
-  left: 60px
+  margin: auto
+  padding: 6px 0px
   text-align: center
   & label
-    padding: 6px 0px 6px 20px
+    margin: auto
     font-weight: bold
-  & input
+  & #date
     width: 100px
     border: none
     background-color: rgb(241,241,241)
-    padding: 6px 20px 6px 0px
 
 .floor
+  margin-top: 4px
   margin-right: 20px
   font-size: 11px
   color: $floor_color
   float: right
-.level_title
+.level-title
   background-color: $header-color
   font-size: 7px
   color: #ffffff
   padding: 1px 1px 1px 0px
   border-radius: 4px
+  position: relative
+  top: -33px
+  left: -38px
   & i
     background-color: $header-color
     color: gold
@@ -97,17 +122,23 @@ h2
   position: relative
   top: 20px
   & p
-    padding: 0px 0px 0px 15px
+    padding: 0px 30px 0px 15px
     font-size: 14px
     line-height: 20px
-    text-indent: 2em
-  & img
-    align: center
-    margin: 16px 15px
+    margin-bottom: 9px
+.content-img
+  text-align: center
 
-#content_interact
+.content-hr
+  width: 100%
+  height: 1px
+  margin-top: 43px
+  background-color: rgb(241,241,241)
+
+
+#content-interact
   float: right
-  margin: 35px 15px 0px 0px
+  margin: 15px 15px 15px 0px
   font-size: 12px
   color: $floor_color
 #divider
@@ -116,71 +147,55 @@ h2
   border: 1px solid rgb(207,207,207)
   background-color: #E9EBEA
 
-#commentary
-  & .portrait
-    margin-top: 20px
-  & .content
-    height: auto
-    & p
-      position: relative
-      top: -65px
-      padding: 0px 15px 0px 40px
-      text-indent: 0em
-#reply
-  width: 244px
-  background-color: #E9EBEA
-  margin: -35px 15px 0px 40px
-  padding: 12px 12px 23px
-  & .nickname
-    font-size: 13px
-    color: rgb(0,51,102)
-  & .reply_content
-    font-size: 12px
-    color: rgb(68,68,68)
-  & .re_date
-    font-size: 9px
-    color: $floor_color
-  & hr
-    margin: 11px 0px
-    color: #C0C4BF
-  & #other_reply
-    color: rgb(0,51,102)
-    float: right
-    font-size: 13px
-.reply_choice
+
+
+.reply-choice
   color: $floor_color
   font-size: 9px
-  padding: 10px 15px 0px 40px
-  & .praise_choose
+  padding: 2px 15px 0px 50px
+  & .praise-choose
     background-color: rgb(255,209,147)
     padding: 6px 10px
     border-radius: 10px
     color: #ffffff
     float: right
-    margin-right: 4px
-  & .comment_choose
+    margin-right: 9px
+  & .comment-choose
     background-color: rgb(255,168,185)
     padding: 6px 10px
     border-radius: 10px
     color: #ffffff
     float: right
+    margin-right: 13px
   & .delete
     color: $header-color
     font-size: 13px
     float: right
-    margin: 4px
+    margin-top: 6px
+  & .re-date
+    margin-top: 8px
+    color: $floor_color
 .hr
-  width: 268px
   height: 1px
   background-color: #C0C4BF
-  margin: 30px 15px 10px 40px
+  margin: 30px 15px 10px 50px
 
 #footer
+  & ul
+    clear: both
+    padding: 0px
+    margin-top: -18px
+    font-size: 16px
+    & #zan
+      margin-right: 14%
+    & #reply-posts
+      margin-left: 14%
   & button
     background-color: #ffffff
     color: black
 .vertical_line
-  width: 2px
-  height: 40px
+  width: 1px
+  height: 28px
+  margin-top: 20px
   background-color: #C0C4BF
 

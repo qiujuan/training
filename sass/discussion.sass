@@ -10,9 +10,6 @@
 *
   margin: 0px
   padding: 0px
-
-
-
 #section
   width: $width
   padding:
@@ -26,6 +23,11 @@ h2
   color: black
   padding: $h_padding
 
+.hr
+  height: 1px
+  width: auto
+  background-color: #cfcfcf
+
 #markhot
   background-color: rgb(255,0,110)
   padding: 1px 2px
@@ -35,30 +37,32 @@ h2
     weight: normal
     size: 7px
 
-#h2_more
+#h2-more
   float: right
   letter-spacing: 1px
 
-#discussion_groups
+#discussion-groups
   padding: 13px 15px
   background-color: $white
+  & table
+    margin: auto
 
-.r_col
+.r-col
   padding-bottom: 20px
 
-#discussion_groups table tr td img
+#discussion-groups table tr td img
   width: 45px
   height: 45px
   border: 1px solid green
   border-radius: 100px
 
-[name="col_odd"]
+[name="col-odd"]
   padding-right: 8px
 
-[name="col_even"]
+[name="col-even"]
   padding-right: 31px
 
-[name="group_name"]
+[name="group-name"]
   font-size: 15px
   color: black
 
@@ -66,7 +70,7 @@ h2
   font-size: 12px
   color: rgb(73,73,73)
 
-#row_three
+#row-three
   padding-bottom: 0px
 
 #talkAbout
@@ -83,7 +87,7 @@ h3
   color: black
   padding: $h_padding
 
-.topInformation
+.top-information
   padding: 11px 15px
   font-size: 13px
   color: black
@@ -95,14 +99,14 @@ h3
   padding-left: 0px
   line-height: 20px
 
-.mark_setTop
+.mark-setTop
   font-size: 10px
   background-color: rgb(202,128,248)
   color: #ffffff
   margin-right: 8px
   padding: 2px
 
-#mark_good
+#mark-good
   float: left
   position: absolute
   z-index: -2
@@ -113,7 +117,7 @@ h3
     style: solid
     color: #ff72a2 #fff #fff #ff72a2
 
-#mark_text
+#mark-text
   float: left
   position: absolute
   z-index: -1
@@ -128,3 +132,11 @@ h3
 
 #talkimg1
   margin: 0px 0px 0px 16px
+
+#footer
+  & ul
+    list-style: none
+    clear: both
+    padding: 0px
+    margin-top: -4px
+    font-size: 16px
