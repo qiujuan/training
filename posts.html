@@ -11,24 +11,26 @@
   <h1>
     话题详情
   </h1>
-  <a href="discussion.html"> <button type="button" id="back" class="fa fa-arrow-left"></button></a>
-  <button id="star" type="button" class="fa fa-star-o"></button>
-  <button id="share" type="button" class="fa fa-share-square-o"></button>
+  <button id="back" class="fa fa-arrow-left"></button>
+  <div>
+    <button id="share" type="button" class="fa fa-share-square-o"></button>
+    <button id="star" type="button" class="fa fa-star-o"></button>
+  </div>
 </header>
 <section id="section">
   <h2>我的双眼皮日记，有图分享哦！</h2>
   <article>
-    <p class="user-info">
-      <label class="portrait">
+    <div class="user-info">
+      <div class="portrait">
         <img src="images/portrait1.jpg"/>
-        <span class="level">Lv.6</span>
-      </label>
-      <label class="nickname">完美小护士</label>
-      <label class="role">楼主</label>
-      <label class="level-title"><i class="fa fa-trophy"></i> 悦美达人</label>
-      <label class="floor">1楼</label><br/>
-      <label class="user-addr">北京 女</label>
-    </p>
+        <div class="level">Lv.6</div>
+      </div>
+      <div class="nickname">完美小护士</div>
+      <div class="role">楼主</div>
+      <div class="level-title"><i class="fa fa-trophy"></i> <div>悦美达人</div></div>
+      <div class="floor">1楼</div>
+      <div class="user-addr">北京 女</div>
+    </div>
     <div class="content">
       <p>
         我是单眼皮女孩，一直想做双眼皮，谁让那些漂亮的双眼皮，闪闪的大眼睛，让人好生羡慕的呢。不过，身为悲催的上班族
@@ -41,71 +43,70 @@
       </p>
       <div class="content-hr"></div>
       <div class="date">
-        <label>DAY 168</label>
-        <label id="date">2015年01月20日</label>
+        DAY168<span id="date">2015年01月20日</span>
       </div>
-      <p>第二天，废话少说，继续上图</p>
-      <p class="content-img">
-      <img src="images/yangmi.jpg"/>
-      </p>
+      <div class="second">
+        <p>第二天，废话少说，继续上图</p>
+        <p class="content-img">
+          <img src="images/yangmi.jpg"/>
+        </p>
+      </div>
     </div>
     <div id="content-interact">
-      <p>
-        <label id="praiseNo"><i class="fa fa-heart-o"></i> 106&nbsp;</label>
-        <label id="commentNo"><i class="fa fa-comment-o"></i> 27</label>
-        <label id="Landlord">&nbsp;&nbsp;只看楼主</label>
-        <label id="report"> 举报</label>
-      </p>
+      <div id="praise-no"><i class="fa fa-heart-o"></i>106</div>
+      <div id="comment-no"><i class="fa fa-comment-o"></i>27</div>
+      <div id="landlord">&nbsp;&nbsp;只看楼主</div>
+      <div id="report"> 举报</div>
     </div>
     <div id="divider"></div>
   </article>
   <article id="commentary">
-    <p class="user-info">
-      <label class="portrait">
+    <div class="user-info">
+      <div class="portrait">
         <img src="images/portrait1.jpg"/>
-        <span class="level">Lv.6</span>
-      </label>
-      <label class="nickname">完美小护士</label>
-      <label class="floor">1楼</label><br/>
-      <label class="user-addr">北京 女</label>
-    </p>
+        <div class="level">Lv.6</div>
+      </div>
+      <div class="nickname">完美小护士</div>
+      <div class="floor">1楼</div>
+      <div class="user-addr">北京 女</div>
+    </div>
     <p class="comment">好漂亮，萌萌哒。楼主这都是手术后多少天的照片？恢复的不错</p>
     <div id="reply">
       <p>
-        <label class="nickname">完美小护士</label>
-        <label class="role">楼主</label>
-        <label class="reply-content">:</label>
-        <label class="reply-content">已经一年了哦</label>
-        <label class="re-date">01-18</label>
+        <span class="nickname">完美小护士</span>
+        <span class="role">楼主</span>
+        <span class="reply-content">:</span>
+        <span class="reply-content">已经一年了哦</span>
+        <span class="re-date">01-18</span>
       </p>
       <div class="hr"></div>
       <p>
-        <label class="nickname">小飞飞</label>
-        <label class="reply-content">:</label>
-        <label class="reply-content">是啊，听说你要回韩国，记得经常联系，帮我代购韩国化妆品哈</label>
-        <label class="re-date">01-18</label>
+        <span class="nickname">小飞飞</span>
+        <span class="reply-content">:</span>
+        <span class="reply-content">是啊，听说你要回韩国，记得经常联系，帮我代购韩国化妆品哈</span>>
+        <span class="re-date">01-18</span>
       </p>
       <div class="hr"></div>
       <p>
-        <label class="nickname">完美小护士</label>
-        <label class="role">楼主</label>
-        <label class="reply-content">:</label>
-        <label class="reply-content">没问题</label>
-        <label class="re-date">01-18</label>
+        <span class="nickname">完美小护士</span>
+        <span class="role">楼主</span>
+        <span class="reply-content">:</span>
+        <span class="reply-content">没问题</span>
+        <span class="re-date">01-18</span>
       </p>
       <div class="hr"></div>
       <p>
-        <label class="nickname">甜蜜蜜Dophin</label>
-        <label class="reply-content">:</label>
-        <label class="reply-content">楼主有没有最新的照片呀</label>
-        <label class="re-date">01-18</label>
+        <span class="nickname">甜蜜蜜Dophin</span>
+        <span class="reply-content">:</span>
+        <span class="reply-content">楼主有没有最新的照片呀</span>
+        <span class="re-date">01-18</span>
       </p>
       <div class="hr"></div>
       <p>
-        <label class="nickname">戴戴思</label>
-        <label class="reply-content">:</label>
-        <label class="reply-content">你这个怎么恢复的</label>
-        <label class="re-date">01-18</label>
+        <span class="nickname">戴戴思</span>
+        <span class="reply-content">:</span>
+        <span class="reply-content">你这个怎么恢复的</span>
+        <span class="re-date">01-18</span>
       </p>
       <div class="hr"></div>
       <a id="other-reply">
@@ -113,68 +114,65 @@
       </a>
     </div>
     <div class="reply-choice">
-      <p>
-        <label class="re-date">11-19</label>
-        <label class="delete">删除</label>
-        <label class="comment-choose"><i class="fa fa-comment-o"></i>&nbsp;回复</label>
-        <label class="praise-choose"><i class="fa fa-heart-o"></i>&nbsp;1</label>
-      </p>
+      <div class="re-date">11-19</div>
+      <div class="delete">删除</div>
+      <div class="comment-choose"><i class="fa fa-comment-o"></i>&nbsp;回复</div>
+      <div class="praise-choose"><i class="fa fa-heart-o"></i>&nbsp;1</div>
     </div>
     <div class="hr"></div>
-    <p class="user-info">
-      <label class="portrait">
+    <div class="user-info-host">
+      <div class="portrait">
         <img src="images/portrait1.jpg"/>
-        <span class="level">Lv.6</span>
-      </label>
-      <label class="nickname">完美小护士</label>
-      <label class="role">楼主</label>
-      <label class="floor">1楼</label><br/>
-      <label class="user-addr">北京 女</label>
-    </p>
+        <div class="level">Lv.6</div>
+      </div>
+      <div class="nickname">完美小护士</div>
+      <div class="role">楼主</div>
+      <div class="floor">1楼</div>
+      <div class="user-addr">北京 女</div>
+    </div>
     <p class="comment">补充一下，我这是在南京做的哦，那里的天气很潮湿，纱布一下子就湿了</p>
     <p class="comment-img"><img src="images/portrait1.jpg"/></p>
     <div class="reply-choice">
-      <p>
-        <label class="re-date">11-19</label>
-        <label class="delete">删除</label>
-        <label class="comment-choose"><i class="fa fa-comment-o"></i>&nbsp;回复</label>
-        <label class="praise-choose"><i class="fa fa-heart-o"></i>&nbsp;1</label>
-      </p>
+      <div class="re-date">11-19</div>
+      <div class="delete">删除</div>
+      <div class="comment-choose"><i class="fa fa-comment-o"></i>&nbsp;回复</div>
+      <div class="praise-choose"><i class="fa fa-heart-o"></i>&nbsp;1</div>
     </div>
     <div class="hr"></div>
-    <p class="delete-user-info">
-      <label class="portrait">
+    <div class="delete-user-info">
+      <div class="portrait">
         <img src="images/portrait2.jpg"/>
-      </label>
-      <label class="floor">4楼</label>
-      <label class="delete-user-comment">该楼层已被删除</label>
-    </p>
+      </div>
+      <div class="floor">4楼</div>
+      <div class="delete-user-comment">该楼层已被删除</div>
+    </div>
     <div class="delete-hr"></div>
-    <p class="authority-user-info">
-      <label class="portrait">
+    <div class="authority-user-info">
+      <div class="portrait">
         <img src="images/portrait1.jpg"/>
-        <span class="authority-v">V</span>
-      </label>
-      <label class="nickname">冯斌</label>
-      <label class="floor">5楼</label><br/>
-      <label class="user-addr">北京 北京美莱整形美容医院 副主任医师</label>
-    </p>
+        <div class="authority-v">V</div>
+      </div>
+      <div class="nickname">冯斌</div>
+      <div class="floor">5楼</div>
+      <div class="user-addr">北京 北京美莱整形美容医院 副主任医师</div>
+    </div>
     <p class="comment">补充一下，我这是在南京做的哦，那里的天气很潮湿，纱布一下子就湿了</p>
     <div class="reply-choice">
-      <p>
-        <label class="re-date">11-19</label>
-        <label class="delete">删除</label>
-        <label class="comment-choose"><i class="fa fa-comment-o"></i>&nbsp;回复</label>
-        <label class="praise-choose"><i class="fa fa-heart-o"></i>&nbsp;1</label>
-      </p>
+      <div class="re-date">11-19</div>
+      <div class="delete">删除</div>
+      <div class="comment-choose"><i class="fa fa-comment-o"></i>回复</div>
+      <div class="praise-choose"><i class="fa fa-heart-o"></i>1</div>
     </div>
   </article>
+  <div id="for-back">
+    <a href="#section"><img src="images/箭头.png"/></a>
+  </div>
 </section>
 <footer id="footer">
   <ul>
-    <li id="zan"><button type="button" class="fa fa-heart-o">&nbsp;赞一下</button></li>
+    <li id="zan"><button type="button" class="fa fa-heart-o"> 赞一下</button></li>
     <li id="ver-line"><div class="vertical_line"></button></div>
-    <li id="reply-posts"><button type="button" class="fa fa-twitch">&nbsp;回帖</button></li>
+    <li id="reply-posts"><button type="button" class="fa fa-twitch"> 回帖</button></li>
   </ul>
 </footer>
 </html>

@@ -10,8 +10,8 @@
 <header id="header">
   <h1>
     讨论组
-    <button id="bars" class="fa fa-bars"></button>
-    <button id="edit" class="fa fa-edit"></button>
+    <button type="button" id="bars" class="fa fa-bars"></button>
+    <button type="button" id="edit" class="fa fa-edit"></button>
   </h1>
 </header>
 <section id="section">
@@ -28,15 +28,15 @@
             <img src="images/portrait1.jpg" name="eyes" title="double_eyes" class="fa fa-eye"/>
           </td>
           <td name="col-even" class="r-col">
-            <label name="group-name">双眼皮</label><br/>
-            <span name="number">3368帖</span>
+            <div name="group-name">双眼皮</div>
+            <div name="number">3368帖</div>
           </td>
           <td  name="col-odd" class="r-col">
             <img src="images/portrait1.jpg" name="eyes" title="double_eyes"/>
           </td>
           <td class="r-col">
-            <label name="group-name">双眼皮</label><br/>
-            <span name="number">3368帖</span>
+            <div name="group-name">双眼皮</div>
+            <div name="number">3368帖</div>
           </td>
         </tr>
         <tr>
@@ -44,15 +44,15 @@
             <img src="images/portrait1.jpg" name="beauty" title="beauty"/>
           </td>
           <td  name="col-even" class="r_col">
-            <label name="group-name">胸部美美滴</label><br/>
-            <span name="number">3368帖</span>
+            <div name="group-name">胸部美美滴</div>
+            <div name="number">3368帖</div>
           </td>
           <td  nme="col-odd" class="r-col">
             <img src="images/portrait1.jpg" name="beauty" title="beauty"/>
           </td>
           <td class="r-col">
-            <label name="group-name">胸部美美滴</label><br/>
-            <span name="number">3368帖</span>
+            <div name="group-name">胸部美美滴</div>
+            <div name="number">3368帖</div>
           </td>
         </tr>
         <tr id="row-three">
@@ -60,15 +60,15 @@
             <img src="images/portrait1.jpg" name="thin" title="thin"/>
           </td>
           <td  name="col-even">
-            <label name="group-name">肚子立刻瘦</label><br/>
-            <span name="number">3368帖</span>
+            <div name="group-name">肚子立刻瘦</div>
+            <div name="number">3368帖</div>
           </td>
           <td  name="col-odd">
             <img src="images/portrait1.jpg" name="thin" title="thin"/>
           </td>
           <td>
-            <label name="group-name">肚子立刻瘦</label><br/>
-            <span name="number">3368帖</span>
+            <div name="group-name">肚子立刻瘦</div>
+            <div name="number">3368帖</div>
           </td>
         </tr>
       </table>
@@ -94,25 +94,20 @@
 </section>
 <footer id="footer">
   <ul>
-    <li>
-      <a href="index.html"><button type="button" id="home" class="fa fa-home"></button><br/>
-        <label>首页</label></a>
+    <li class="home-li">
+      <a href="index.html"><i id="home" class="fa fa-home"></i><br/>首页</a>
     </li>
-    <li>
-      <a href="discussion.html"><button type="button" id="discussIcon" class="fa fa-twitch"></button><br/>
-        <label>讨论组</label></a>
+    <li class="discuss-li">
+      <a href="discussion.html"><i id="discuss-icon" class="fa fa-twitch"></i><br/>讨论组</a>
     </li>
-    <li>
-      <button type="button" id="microPlastic" class="fa fa-tag"></button><br/>
-      <label>淘整形</label>
+    <li class="micro-li">
+      <a href="#"><i id="micro-plastic" class="fa fa-tag"></i><br/>淘整形</a>
     </li>
-    <li>
-      <button type="button" id="msg" class="fa fa-envelope-o"></button><br/>
-      <label>消息</label>
+    <li class="msg-li">
+      <a href="#"><i id="msg" class="fa fa-envelope-o"></i><br/>消息</a>
     </li>
-    <li>
-      <a href="posts.html"><button type="button" id="me" class="fa fa-user"></button><br/>
-        <label>我</label></a>
+    <li class="me-li">
+      <a href="posts.html"><i id="me"  class="fa fa-user"></i><br/>我</a>
     </li>
   </ul>
 </footer>
