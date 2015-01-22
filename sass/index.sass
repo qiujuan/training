@@ -1,7 +1,8 @@
 @import "variable"
 @import "framwork/header"
 @import "framwork/footer"
-
+@import "index/show"
+@import "index/discovery"
 
 body
   padding: 0px
@@ -18,7 +19,7 @@ body
   padding: 65px 0px 0px
 
 #slider
-  background-color: red
+  background-color: white
   margin: auto
   width: 320px
   height: 122px
@@ -59,106 +60,18 @@ body
   padding-bottom: 500px
   background-color: rgb(232,232,232)
 
-.mark-good
-  width: 34px
-  height: 15px
-  font-size: 11px
-  color: #ffffff
-  text-align: right
-  padding: 5px
-  position: relative
-  top: -114px
-  float: right
-  border-radius: 500px 30px 30px 500px
-[name="marrow"]
-  background-color: $header-color
-[name="recommendation"]
-  background-color: $chat_color
-[name="none"]
-  opacity: 0
-.portrait
-  position: relative
-  left: 5px
-  top: -37px
-  height: 37px
-  width: 110px
-  & img
-    width: 32px
-    height: 32px
-    border: 2px solid #ffffff
-    border-radius: 100px
-  & span
-    width: 63px
-    font-size: 11px
-    color: rgb(252,150,187)
-    position: relative
-    top: -10px
-#show
-  margin: 0px
-  padding: 12px 10px 0px
-  & div
-    margin: auto
-    height: 169px
-    width: 300px
-    background-color: #ffffff
-    margin-bottom: 12px
-    border-radius: $div_img_border_radius
-  & p
-    display: inline-block
-    font-size: 14px
-    position: relative
-    top: -30px
-    left: 8px
-
-[name="showImg"]
-  width: 300px
-  height: 123px
-
 
 #discovery-h
   margin: auto
   padding: 0px
   width: 320px
-  & h
+  & h2
+    margin: 0px
     padding: 12px 17px 0px
     font-size: 14px
+    font-weight: normal
     color: rgb(179,179,179)
-#discovery
-  width: $width
-  height: 200px
-  padding-top: 11px
-  & div
-    width: 302px
-    background-color: #ffffff
-    margin: auto
-    border-radius: $div_img_border_radius
-    & img
-      width: 290px
-      height: 128px
-      padding: 8px 6px 0px
-      border-radius: $div_img_border_radius
-.hr
-  width: 320px
-  height: 1px
-  margin-bottom: 0px
-  background-color: rgb(233,233,235)
 
-
-[name="findName"]
-  font-size: 14px
-  margin: 11px 9px 13px
-[ name="find-place-price"]
-  margin: 13px 6px
-[name="location"]
-  font-size: 12px
-  color: rgb(205,205,205)
-[name="price"]
-  font-size: 12px
-  color: rgb(252,150,187)
-[name="pre-price"]
-  color: rgb(205,205,205)
-  font-size: 7px
-  text-decoration: line-through
 
 #footer
   & ul
@@ -167,6 +80,3 @@ body
     padding: 0px
     margin-top: -4px
     font-size: 16px
-
-
-

@@ -1,10 +1,13 @@
 @import "framwork/header"
 @import "variable"
 @import "framwork/footer"
-@import "posts-comment/comment"
-@import "posts-comment/reply"
-@import "posts-comment/delete-floor"
-@import "posts-comment/authority"
+@import "posts/comment"
+@import "posts/reply"
+@import "posts/delete-floor"
+@import "posts/authority"
+@import "posts/user-info"
+@import "posts/reply-choice"
+
 
 body
   padding: 0px
@@ -30,51 +33,7 @@ body
 h2
   font-size: 17px
   padding: 18px 10px 20px
-.user-info
-  width: $width
-  height: 35px
-.portrait
-  text-align: center
-  vertical-align: middle
-  & img
-    width: 32px
-    height: 32px
-    margin: 0px 9px 15px
-    border: 1px solid gray
-    border-radius: 100px
-.level
-  width: 27px
-  height: 12px
-  font-size: 5px
-  font-family: Arial
-  text-align: center
-  color: #ffffff
-  background-color: $header-color
-  position: relative
-  top: -10px
-  left: -45px
-  border-radius: 5px
-.user-addr
-  width: 270px
-  height: 32px
-  color: $floor_color
-  position: relative
-  top: -36px
-  left: 50px
-.nickname
-  font-size: 14px
-  position: relative
-  top: -33px
-  left: -37px
-.role
-  background-color: $expert_color
-  padding: 1px 2px
-  font-size: 9px
-  border-radius: 4px
-  color: #ffffff
-  position: relative
-  top: -33px
-  left: -38px
+
 .date
   width: 215px
   height: 13px
@@ -94,29 +53,6 @@ h2
     border: none
     background-color: rgb(241,241,241)
 
-.floor
-  margin-top: 4px
-  margin-right: 20px
-  font-size: 11px
-  color: $floor_color
-  float: right
-.level-title
-  background-color: $header-color
-  font-size: 7px
-  color: #ffffff
-  padding: 1px 1px 1px 0px
-  border-radius: 4px
-  position: relative
-  top: -33px
-  left: -38px
-  & i
-    background-color: $header-color
-    color: gold
-    padding: 4px 2px
-    border-radius: 50px
-.user__info
-  font-size: 11px
-  color: $floor_color
 .content
   width: $width
   position: relative
@@ -148,33 +84,6 @@ h2
   background-color: #E9EBEA
 
 
-
-.reply-choice
-  color: $floor_color
-  font-size: 9px
-  padding: 2px 15px 0px 50px
-  & .praise-choose
-    background-color: rgb(255,209,147)
-    padding: 6px 10px
-    border-radius: 10px
-    color: #ffffff
-    float: right
-    margin-right: 9px
-  & .comment-choose
-    background-color: rgb(255,168,185)
-    padding: 6px 10px
-    border-radius: 10px
-    color: #ffffff
-    float: right
-    margin-right: 13px
-  & .delete
-    color: $header-color
-    font-size: 13px
-    float: right
-    margin-top: 6px
-  & .re-date
-    margin-top: 8px
-    color: $floor_color
 .hr
   height: 1px
   background-color: #C0C4BF
@@ -196,6 +105,11 @@ h2
 .vertical_line
   width: 1px
   height: 28px
+  border-radius: 10px
   margin-top: 20px
   background-color: #C0C4BF
-
+  background-image: -webkit-radial-gradient(#C0C4BF,#ffffff)
+  background-image: -moz-radial-gradient(#C0C4BF,#ffffff)
+  background-image: -o-radial-gradient(#C0C4BF,#ffffff)
+  background-image: -ms-radial-gradient(#C0C4BF,#ffffff)
+  background-image: radial-gradient(#C0C4BF,#ffffff)
