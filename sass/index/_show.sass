@@ -1,14 +1,40 @@
 .mark-good
-  width: 34px
-  height: 15px
+  width: 12px
+  height: 4px
   font-size: 11px
   color: #ffffff
   text-align: right
-  padding: 5px
+  padding: 5px 6px 5px 3px
   position: relative
   top: -114px
+  right: -3px
   float: right
-  border-radius: 500px 30px 30px 500px
+  border-radius: 0px 3px 3px 0px
+  & .triangle
+    width: 0px
+    height: 0px
+    position: relative
+    right: 10px
+    top: -5px
+    border-top: 7px solid rgba(255,255,255,0)
+    border-bottom: 7px solid rgba(255,255,255,0)
+    border-right: 7px solid $header-color
+  & .triangle-yellow
+    width: 0px
+    height: 0px
+    position: relative
+    right: 10px
+    top: -5px
+    border-top: 7px solid rgba(255,255,255,0)
+    border-bottom: 7px solid rgba(255,255,255,0)
+    border-right: 7px solid $chat_color
+  & .jinghua
+    position: relative
+    width: 40px
+    font-size: 6px
+    left: -21px
+    top: -19px
+
 [name="marrow"]
   background-color: $header-color
 [name="recommendation"]
@@ -18,7 +44,7 @@
 .portrait
   position: relative
   left: 5px
-  top: -37px
+  top: -35px
   height: 37px
   width: 110px
   & img
@@ -26,29 +52,32 @@
     height: 32px
     border: 2px solid #ffffff
     border-radius: 100px
-  & span
-    width: 63px
+    box-shadow: 1px 1px 1px gray
+  & div
     font-size: 11px
-    color: rgb(252,150,187)
-    position: relative
-    top: -10px
+    color: #ffffff
+    margin: -29px 0px 0px 40px
 #show
   margin: 0px
   padding: 12px 10px 0px
-  & div
+  & .box
     margin: auto
     height: 169px
     width: 300px
     background-color: #ffffff
     margin-bottom: 12px
     border-radius: $div_img_border_radius
-  & p
-    display: inline-block
-    font-size: 14px
-    position: relative
-    top: -45px
-    left: 8px
+    & .writing
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      width: 20em
+      font-size: 14px
+      position: relative
+      left: 8px
+      top: -30px
 
-[name="showImg"]
+[name="show-img"]
   width: 300px
   height: 123px
+  border-radius: $div_img_border_radius

@@ -9,31 +9,37 @@
   border: 1px solid rgb(207,207,207)
   text-align: center
   clear: both
-ul
-  list-style: none
-  clear: both
-li
-  display: inline-block
-  height: 40px
-  margin-right: 20px
-label
-  font-size: 10px
-  color: $footer_color
-#home,#discussIcon,#microPlastic,#msg,#me
+  & ul
+    list-style: none
+    clear: both
+    & li
+      display: inline-block
+      height: 40px
+      margin: 0px 12px
+      font-size: 11px
+      color: black
+      & i
+        width: 21px
+        height: 23px
+        padding: 0px
+        color: $header-color
+.home-li,.discuss-li,.micro-li,.msg-li,.me-li
+  & a
+    text-decoration: none
+    color: $header-color
+    & a:link
+      text-decoration: none
+      color: $header-color
+    & a:visited
+      text-decoration: none
+      color: $header-color
+    & a:active
+      color: $header-color
+      text-decoration: none
+
+#home,#discuss-icon,#micro-plastic,#msg,#me
   font-size: 20px
   border: none
   outline: none
   background-color: white
   color: $footer_color
-
-a
-  text-underline: none
-a:link
-  color: $header-color
-  text-underline: none
-a:visited
-  color: $header-color
-  text-underline: none
-a:active
-  color: $header-color
-  text-underline: none
