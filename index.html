@@ -4,11 +4,10 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
   <title>首页</title>
-  <link rel="stylesheet" href="js/slide/css/style.css"/>
+  <link rel="stylesheet" href="css/slide.css"/>
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/index.css"  media="screen, projection"/>
 </head>
-
 <body>
   <header id="header">
     <h1><img src="images/悦美.png"/> </h1>
@@ -38,7 +37,6 @@
               <a href="javascript:void(0);"><img src="images/kd.jpg" /></a>
             </div>
           </li>
-
         </ul>
       </div>
       <div class="banner-btn">
@@ -58,21 +56,19 @@
     <div id="show">
       <div class="box">
         <a><img src="images/piaoxinhui.jpg" name="show-img" title="pic"/><br/></a>
-        <div class="mark-good" name="marrow">
+        <div class="mark-good" id="marrow">
           <div class="triangle"></div>
           <div class="jinghua">精华</div>
         </div>
-        <a>
-          <div class="portrait">
-            <img src="images/portrait1.jpg"/>
-            <div class="nickname">红糖蜜罐妞</div>
-          </div>
-        </a>
+        <div class="portrait">
+          <a><img src="images/portrait1.jpg"/></a>
+          <div class="nickname">红糖蜜罐妞</div>
+        </div>
         <div class="writing">上个月做了脂肪填充面颊突然变年轻了呢，好开心啊啊哈哈哈</div>
       </div>
       <div class="box">
         <img src="images/yangmi.jpg" name="show-img" title="pic"/><br/>
-        <div class="mark-good" name="recommendation" >
+        <div class="mark-good" id="recommendation" >
           <div class="triangle-yellow"></div>
           <div class="jinghua">推荐</div>
         </div>
@@ -84,7 +80,7 @@
       </div>
       <div class="box">
         <img src="images/luhan.jpg" name="show-img" title="pic"/><br/>
-        <div class="mark-good" name="none">精华</div>
+        <div class="mark-good" id="none">精华</div>
         <div class="portrait">
           <img src="images/portrait3.jpg"/>
           <div class="nickname">清浅吟唱</div>
@@ -96,6 +92,7 @@
       <h2>
         <i class="fa fa-heart-o"></i> 发现·美食
       </h2>
+
       <div class="discovery-box">
         <img src="images/cookie.jpg" name="find-img"/>
         <div class="find-name">切开法双眼皮1cm微创不留痕，解决眼泡问题非常有效</div>
@@ -139,9 +136,6 @@
       <li class="discuss-li">
         <a href="discussion.html"><i id="discuss-icon" class="fa fa-twitch"></i><br/>讨论组</a>
       </li>
-      <li class="micro-li">
-        <a href="#"><i id="micro-plastic" class="fa fa-tag"></i><br/>淘整形</a>
-      </li>
       <li class="msg-li">
         <a href="#"><i id="msg" class="fa fa-envelope-o"></i><br/>消息</a>
       </li>
@@ -164,7 +158,6 @@
         autoPage:true,
         trigger:"click"
       });
-
     });
   </script>
 </body>

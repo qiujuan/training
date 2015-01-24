@@ -1,18 +1,23 @@
+$header-color:rgb(255, 79, 115)
+$floor_color:rgb(186,186,186)
+
+
 .user-info
-  width: $width
+  width: auto
   height: 35px
-.portrait
+  display: block
+.head-sculpture
   & img
     width: 32px
     height: 32px
-    margin: 0px 9px 15px
+    margin: 0 9px 15px
     border: 1px solid gray
     border-radius: 100px
 .level
   width: 25px
   height: 8px
   font-size: 7px
-  font-family: Arial
+  font-family: Arial,Sans-serif
   text-align: center
   color: #ffffff
   background-color: $header-color
@@ -20,58 +25,62 @@
   top: -25px
   left: 13px
   border-radius: 5px
+.nickname
+  width: 100px
+  font-size: 14px
+  position: relative
+  top: -57px
+  left: 51px
+  right: 0
 .user-addr
   width: 270px
   height: 32px
   color: $floor_color
   position: relative
-  padding: 0px
-  top: -84px
-  left: 50px
+  padding: 0
+  top: -78px
+  left: 51px
   font-size: 11px
-.nickname
-  font-size: 14px
-  position: relative
-  top: -61px
-  left: 53px
 .role
   width: 23px
   height: 12px
   background-color: $expert_color
   padding: 1px 2px
   font-size: 10px
-  border-radius: 4px
+  border-radius: 2px
   color: #ffffff
   position: relative
-  top: -76px
-  left: 133px
+  top: -72px
+  left: 130px
   text-align: center
-.floor
-  margin-top: -104px
-  margin-right: 10px
-  font-size: 12px
-  color: $floor_color
-  float: right
-  width: auto
 .level-title
   width: 46px
   height: 8px
   background-color: $header-color
   font-size: 7px
   color: #ffffff
-  padding: 1px 1px 1px 0px
+  padding: 1px 1px 1px 0
   border-radius: 2px 2px 8px 2px
   position: relative
-  top: -88px
-  left: 172px
-  & div
-    margin-top: -12px
-    margin-left: 13px
+  top: -84px
+  left: 169px
+  & span
+    position: relative
+    top: -3px
+    left: -3px
   & i
     background-color: $header-color
     color: gold
     font-size: 9px
     padding: 3px 3px 2px
-    margin-top: -4px
-    margin-left: -2px
+    position: relative
+    top: -3px
+    left: -2px
     border-radius: 50px
+.floor
+  position: relative
+  top: -96px
+  right: 10px
+  float: right
+  font-size: 12px
+  color: $floor_color

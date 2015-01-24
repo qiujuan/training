@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head lang="zh-cmn-Hans">
-  <meta name="viewport" content="width=device-width,maximum=1,minimum=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta charset="UTF-8">
   <title>话题详情</title>
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
@@ -21,27 +21,28 @@
   <h2>我的双眼皮日记，有图分享哦！</h2>
   <article>
     <div class="user-info">
-      <div class="portrait">
+      <div class="head-sculpture">
         <img src="images/portrait1.jpg"/>
         <div class="level">Lv.6</div>
       </div>
       <div class="nickname">完美小护士</div>
       <div class="role">楼主</div>
-      <div class="level-title"><i class="fa fa-trophy"></i> <div>悦美达人</div></div>
+      <div class="level-title"><i class="fa fa-trophy"></i> <span>悦美达人</span></div>
       <div class="floor">1楼</div>
       <div class="user-addr">北京 女</div>
     </div>
     <div class="content">
-      <p>
-        我是单眼皮女孩，一直想做双眼皮，谁让那些漂亮的双眼皮，闪闪的大眼睛，让人好生羡慕的呢。不过，身为悲催的上班族
-      </p>
-      <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;下图是我的真实写照，直到今年年初，在拿了年终奖和春天的好心情的双重作用下，我终于去为自己送上了这份美丽的礼物。此处可以有掌声~
-      </p>
-      <p class="content-img">
-        <img src="images/piaoxinhui.jpg"/>
-      </p>
-      <div class="content-hr"></div>
+      <div class="first">
+        <p>
+          我是单眼皮女孩，一直想做双眼皮，谁让那些漂亮的双眼皮，闪闪的大眼睛，让人好生羡慕的呢。不过，身为悲催的上班族
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;下图是我的真实写照，直到今年年初，在拿了年终奖和春天的好心情的双重作用下，我终于去为自己送上了这份美丽的礼物。此处可以有掌声~
+        </p>
+        <p class="content-img">
+          <img src="images/piaoxinhui.jpg"/>
+        </p>
+      </div>
       <div class="date">
         DAY168<span id="date">2015年01月20日</span>
       </div>
@@ -62,7 +63,7 @@
   </article>
   <article id="commentary">
     <div class="user-info">
-      <div class="portrait">
+      <div class="head-sculpture">
         <img src="images/portrait1.jpg"/>
         <div class="level">Lv.6</div>
       </div>
@@ -75,36 +76,38 @@
       <p>
         <span class="nickname">完美小护士</span>
         <span class="role">楼主</span>
-        <span class="reply-content">:</span>
+        <span class="reply-colon">:</span>
         <span class="reply-content">已经一年了哦</span>
         <span class="re-date">01-18</span>
+        <span class="re-delete">删除</span>
       </p>
       <div class="hr"></div>
       <p>
         <span class="nickname">小飞飞</span>
-        <span class="reply-content">:</span>
-        <span class="reply-content">是啊，听说你要回韩国，记得经常联系，帮我代购韩国化妆品哈</span>>
+        <span class="reply-colon">:</span>
+        <span class="reply-content">是啊，听说你要回韩国，记得经常联系，帮我代购韩国化妆品哈</span>
         <span class="re-date">01-18</span>
       </p>
       <div class="hr"></div>
       <p>
         <span class="nickname">完美小护士</span>
         <span class="role">楼主</span>
-        <span class="reply-content">:</span>
+        <span class="reply-colon">:</span>
         <span class="reply-content">没问题</span>
         <span class="re-date">01-18</span>
+        <span class="re-delete">删除</span>
       </p>
       <div class="hr"></div>
       <p>
         <span class="nickname">甜蜜蜜Dophin</span>
-        <span class="reply-content">:</span>
+        <span class="reply-colon">:</span>
         <span class="reply-content">楼主有没有最新的照片呀</span>
         <span class="re-date">01-18</span>
       </p>
       <div class="hr"></div>
       <p>
         <span class="nickname">戴戴思</span>
-        <span class="reply-content">:</span>
+        <span class="reply-colon">:</span>
         <span class="reply-content">你这个怎么恢复的</span>
         <span class="re-date">01-18</span>
       </p>
@@ -115,13 +118,15 @@
     </div>
     <div class="reply-choice">
       <div class="re-date">11-19</div>
-      <div class="delete">删除</div>
-      <div class="comment-choose"><i class="fa fa-comment-o"></i>&nbsp;回复</div>
-      <div class="praise-choose"><i class="fa fa-heart-o"></i>&nbsp;1</div>
+      <div class="re-choice">
+        <span class="praise-choose"><i class="fa fa-heart-o"></i>1</span>
+        <span class="comment-choose"><i class="fa fa-comment-o"></i>回复</span>
+        <span class="delete">删除</span>
+      </div>
     </div>
     <div class="hr"></div>
     <div class="user-info-host">
-      <div class="portrait">
+      <div class="head-sculpture">
         <img src="images/portrait1.jpg"/>
         <div class="level">Lv.6</div>
       </div>
@@ -130,25 +135,27 @@
       <div class="floor">1楼</div>
       <div class="user-addr">北京 女</div>
     </div>
-    <p class="comment">补充一下，我这是在南京做的哦，那里的天气很潮湿，纱布一下子就湿了</p>
+    <p class="host-comment">补充一下，我这是在南京做的哦，那里的天气很潮湿，纱布一下子就湿了</p>
     <p class="comment-img"><img src="images/portrait1.jpg"/></p>
     <div class="reply-choice">
       <div class="re-date">11-19</div>
-      <div class="delete">删除</div>
-      <div class="comment-choose"><i class="fa fa-comment-o"></i>&nbsp;回复</div>
-      <div class="praise-choose"><i class="fa fa-heart-o"></i>&nbsp;1</div>
+      <div class="re-choice">
+        <span class="praise-choose"><i class="fa fa-heart-o"></i>1</span>
+        <span class="comment-choose"><i class="fa fa-comment-o"></i>回复</span>
+        <span class="delete">删除</span>
+      </div>
     </div>
     <div class="hr"></div>
     <div class="delete-user-info">
-      <div class="portrait">
+      <div class="head-sculpture">
         <img src="images/portrait2.jpg"/>
       </div>
       <div class="floor">4楼</div>
-      <div class="delete-user-comment">该楼层已被删除</div>
+      <p class="delete-user-comment">该楼层已被删除</p>
     </div>
     <div class="delete-hr"></div>
     <div class="authority-user-info">
-      <div class="portrait">
+      <div class="head-sculpture">
         <img src="images/portrait1.jpg"/>
         <div class="authority-v">V</div>
       </div>
@@ -156,12 +163,14 @@
       <div class="floor">5楼</div>
       <div class="user-addr">北京 北京美莱整形美容医院 副主任医师</div>
     </div>
-    <p class="comment">补充一下，我这是在南京做的哦，那里的天气很潮湿，纱布一下子就湿了</p>
+    <p class="author-comment">补充一下，我这是在南京做的哦，那里的天气很潮湿，纱布一下子就湿了</p>
     <div class="reply-choice">
       <div class="re-date">11-19</div>
-      <div class="delete">删除</div>
-      <div class="comment-choose"><i class="fa fa-comment-o"></i>回复</div>
-      <div class="praise-choose"><i class="fa fa-heart-o"></i>1</div>
+      <div class="re-choice">
+        <span class="praise-choose"><i class="fa fa-heart-o"></i>1</span>
+        <span class="comment-choose"><i class="fa fa-comment-o"></i>回复</span>
+        <span class="delete">删除</span>
+      </div>
     </div>
   </article>
   <div id="for-back">
@@ -171,7 +180,7 @@
 <footer id="footer">
   <ul>
     <li id="zan"><button type="button" class="fa fa-heart-o"> 赞一下</button></li>
-    <li id="ver-line"><div class="vertical_line"></button></div>
+    <li id="ver-line"><div class="vertical_line"></div>
     <li id="reply-posts"><button type="button" class="fa fa-twitch"> 回帖</button></li>
   </ul>
 </footer>

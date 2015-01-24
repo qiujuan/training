@@ -1,28 +1,35 @@
 #commentary
   & .user-info
-    margin-top: 13px
     width: $width
     height: 35px
-    & .portrait
-      margin-top: 20px
+    & .head-sculpture
+      position: relative
+      top: 13px
+    & .nickname
+      position: relative
+      top: -43px
     & .user-addr
       position: relative
-      padding: 0px
-      top: -60px
+      top: -40px
     & .floor
-      margin-top: -82px
+      position: relative
+      top: -59px
   & .comment
-    margin: 16px 23px 0px 50px
-    line-height: 20px
+    margin: 28px 0px 0px 50px
+    line-height: 22px
     font-size: 16px
   & .comment-img
+    margin-top: 15px
     text-align: center
 
   & .user-info-host
-    @extend .user-info
-    margin-top: 0px
+    height: auto
+    & .floor
+      position: relative
+      top: -88px
     & .user-addr
       position: relative
-      top: -73px
-    & .floor
-      margin-top: -92px
+      top: -67.5px
+  & .host-comment
+    @extend .comment
+    margin-top: -70px

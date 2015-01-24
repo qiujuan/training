@@ -1,34 +1,46 @@
-@import "variable"
+$floor_color:rgb(186,186,186)
+
 #reply
   width: auto
   background-color: #E9EBEA
-  margin: 17px 15px 0px 50px
-  padding: 12px 12px 23px
+  margin: 18px 15px  0 50px
+  padding: 12px 10px 26px
   border-radius: 3px
-  & .nickname
-    font-size: 13px
-    color: rgb(0,51,102)
-    position: relative
-    top: 0px
-    left: 0px
-  & .role
-    position: relative
-    top: 0px
-    left: 0px
-  & .reply-content
-    font-size: 12px
-    color: rgb(68,68,68)
-  & .re-date
-    font-size: 9px
-    color: $floor_color
+  & p
+    margin: 0
+    padding: 0
+    & .nickname
+      font-size: 13px
+      color: rgb(0,51,102)
+      position: relative
+      top: 0px
+      left: 0px
+    & .role
+      position: relative
+      top: 0px
+      left: 0px
+    & .reply-colon
+      font-size: 13px
+      color: rgb(68,68,68)
+    & .reply-content
+      font-size: 13px
+      color: rgb(68,68,68)
+      margin-right: 8px
+    & .re-date
+      font-size: 11px
+      color: $floor_color
+      margin-right: 8px
+    & .re-delete
+      font-size: 12px
+      color: $header-color
   & .hr
     width: auto
     height: 1px
-    margin: 11px 0px
+    margin: 10px 0px 9px
     color: #C0C4BF
   & #other-reply
     & p
-      margin: 0px
+      margin: 3px 0 10px
       padding: 0px
       color: rgb(0,51,102)
       float: right
