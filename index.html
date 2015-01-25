@@ -14,33 +14,18 @@
     <button id="bars" class="fa fa-magic"></button>
   </header>
   <nav id="navigation">
-    <div class="banner-box">
-      <div class="bd">
-        <ul>
-          <li>
-            <div class="m-width">
-              <a href="javascript:void(0);"><img src="images/gly.jpg" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="m-width">
-              <a href="javascript:void(0);"><img src="images/sllk.jpg" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="m-width">
-              <a href="javascript:void(0);"><img src="images/malysia.jpg" /></a>
-            </div>
-          </li>
-          <li>
-            <div class="m-width">
-              <a href="javascript:void(0);"><img src="images/kd.jpg" /></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="banner-btn">
-        <div class="hd"><ul></ul></div>
+    <div id="slide">
+      <ul>
+        <li><img src="images/gly.jpg" alt="" /></li>
+        <li><img src="images/sllk.jpg" alt="" /></li>
+        <li><img src="images/malysia.jpg" alt="" /></li>
+        <li><img src="images/kd.jpg" alt="" /></li>
+      </ul>
+      <div id="ico" class="ico">
+        <a class="active" href="javascript:void(0);"></a>
+        <a href="javascript:void(0);"></a>
+        <a href="javascript:void(0);"></a>
+        <a href="javascript:void(0);"></a>
       </div>
     </div>
     <div id="nav">
@@ -144,21 +129,25 @@
       </li>
     </ul>
   </footer>
-  <script src="js/slide/js/jquery-1.7.2.min.js"></script>
-  <script src="js/slide/js/jquery.SuperSlide.2.1.1.js"></script>
+  <script src="js/slide.js"></script>
   <script>
-    $(document).ready(function(){
-      $(".banner-box").slide({
-        titCell:".hd ul",
-        mainCell:".bd ul",
-        effect:"fold",
-        interTime:3500,
-        delayTime:500,
-        autoPlay:true,
-        autoPage:true,
-        trigger:"click"
-      });
-    });
+    var curIndex=0;
+    var timeInterval=6000;
+    var arr=[];
+    arr[0]=" images/gly.jpg";
+    arr[1]=" images/sllk.jpg";
+    arr[2]=" images/malysia.jpg";
+    arr[3]=" images/kd.jpg";
+    setInterval(changeImg,timeInterval);
+    function changeImg(){
+      var img=document.getElementsByTagName("img");
+      if(curIndex==arr.length-1){
+        curIndex=0;
+      }else{
+        curIndex+=1;
+      }
+      img.src=arr[curIndex];
+    }
   </script>
 </body>
 </html>
